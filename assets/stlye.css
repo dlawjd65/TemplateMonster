@@ -1,0 +1,247 @@
+.vertical-rolling-banner {
+            background-color: rgb(31, 29, 29);
+            color: white;
+            height: 45px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-wrapper {
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .banner-content-vertical {
+            display: flex;
+            flex-direction: column;
+            animation: verticalRoll 10s linear infinite;
+            transition: animation-play-state 0.2s ease;
+        }
+
+        .banner-item-vertical {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+            padding: 0 20px;
+        }
+
+        .banner-item-vertical i {
+            color: #ffd700;
+            font-size: 16px;
+        }
+
+        @keyframes verticalRoll {
+            0% {
+                transform: translateY(0);
+            }
+            12.5% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(-45px);
+            }
+            37.5% {
+                transform: translateY(-45px);
+            }
+            50% {
+                transform: translateY(-90px);
+            }
+            62.5% {
+                transform: translateY(-90px);
+            }
+            75% {
+                transform: translateY(-135px);
+            }
+            87.5% {
+                transform: translateY(-135px);
+            }
+            100% {
+                transform: translateY(-180px);
+            }
+        }
+
+        .vertical-rolling-banner:hover .banner-content-vertical {
+            animation-play-state: paused;
+        }
+
+        /* 페이드 인/아웃 효과 */
+        .banner-item-vertical {
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        /* 기본 헤더 스타일 */
+        .bg-color-primary {
+            background-color: #f8f9fa;
+        }
+
+        .header-center {
+            padding: 15px 0;
+        }
+
+        .main-menu__list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+        }
+
+        .main-menu__list li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 10px 0;
+            transition: color 0.3s ease;
+        }
+
+        .main-menu__list li a:hover,
+        .main-menu__list li a.active {
+            color: #667eea;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .sub-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .dropdown:hover .sub-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .sub-menu li a {
+            padding: 8px 20px;
+            display: block;
+            font-size: 14px;
+        }
+
+        .header-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .button-block {
+            padding: 8px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .button-block:hover {
+            background-color: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .main-menu__toggler {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        /* 반응형 스타일 */
+        @media (max-width: 991px) {
+            .main-menu__toggler {
+                display: block;
+            }
+            
+            .navigation {
+                display: none !important;
+            }
+
+            .banner-item-vertical {
+                font-size: 12px;
+                padding: 0 15px;
+            }
+
+            .banner-item-vertical i {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .vertical-rolling-banner {
+                height: 40px;
+            }
+
+            .banner-item-vertical {
+                height: 40px;
+                font-size: 11px;
+                padding: 0 10px;
+            }
+
+            @keyframes verticalRoll {
+                0% {
+                    transform: translateY(0);
+                }
+                12.5% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-40px);
+                }
+                37.5% {
+                    transform: translateY(-40px);
+                }
+                50% {
+                    transform: translateY(-80px);
+                }
+                62.5% {
+                    transform: translateY(-80px);
+                }
+                75% {
+                    transform: translateY(-120px);
+                }
+                87.5% {
+                    transform: translateY(-120px);
+                }
+                100% {
+                    transform: translateY(-160px);
+                }
+            }
+        }
+
+        /* 추가 시각 효과 */
+        .vertical-rolling-banner {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .banner-item-vertical:hover {
+            text-shadow: 0 0 8px rgba(255,255,255,0.5);
+        }

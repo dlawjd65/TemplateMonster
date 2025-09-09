@@ -1024,9 +1024,6 @@ Helpers
   }
 }
 
-.py-40 {
-  padding: clamp(28px, 2.083vw, 80px) 0;
-}
 @media (max-width: 575px) {
   .py-40 {
     padding: 32px 0;

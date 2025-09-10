@@ -266,3 +266,159 @@
   color: #fff;
   font-size: 2rem;
 }
+
+
+
+/* 가로 슬라이드 */
+.auto-testimonials-section {
+            width: 100%;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .auto-heading-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .auto-eyebrow {
+            display: inline-block;
+            background: linear-gradient(45deg, #FC6102, #ff8a50);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .auto-main-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            margin: 0;
+        }
+
+        .auto-slider-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+        }
+
+        .auto-testimonial-track {
+            display: flex;
+            animation: autoSlide 20s linear infinite;
+            gap: 30px;
+            will-change: transform;
+        }
+
+        @keyframes autoSlide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .auto-testimonial-track:hover {
+            animation-play-state: paused;
+        }
+
+        .auto-testimonial-card {
+            flex: 0 0 350px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .auto-testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .auto-rating-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 20px;
+        }
+
+        .auto-star {
+            width: 18px;
+            height: 18px;
+            fill: #FC6102;
+            filter: drop-shadow(0 2px 4px rgba(252, 97, 2, 0.2));
+        }
+
+        .auto-testimonial-text {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .auto-user-profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .auto-user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #FC6102, #ff8a50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(252, 97, 2, 0.3);
+        }
+
+        .auto-user-details h4 {
+            color: #222;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .auto-user-details p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .auto-testimonials-section {
+                padding: 40px 20px;
+            }
+
+            .auto-main-title {
+                font-size: 28px;
+            }
+
+            .auto-testimonial-card {
+                flex: 0 0 280px;
+                padding: 25px;
+            }
+        }
+
+        /* 추가 카드들 (무한 스크롤 효과) */
+        .auto-testimonial-track::after {
+            content: '';
+            flex: 0 0 30px;
+        }

@@ -181,3 +181,7 @@
         window.addEventListener('popstate', function() {
             updateSlider();
         });
+
+
+        // 가로슬라이드
+        

@@ -70,7 +70,7 @@
         // 진행바 업데이트
         function updateProgressBar() {
             const progress = ((currentSlide + 1) / totalSlides) * 100;
-            progressBar.style.width = `${progress}%`;
+            progressBar.style.width = '${progress}%';
         }
 
         // 다음 슬라이드

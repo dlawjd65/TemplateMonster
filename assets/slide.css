@@ -273,11 +273,8 @@
 .auto-testimonials-section {
             width: 100%;
             max-width: 1000px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border-radius: 24px;
             padding: 60px 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
         }
 
         .auto-heading-container {
@@ -421,4 +418,10 @@
         .auto-testimonial-track::after {
             content: '';
             flex: 0 0 30px;
+        }
+
+
+        /* 지도 */
+        iframe{
+          margin: 0 auto;
         }

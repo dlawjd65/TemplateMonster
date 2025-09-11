@@ -89,7 +89,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto-sans", sans-serif;
   color: #666975;
   background-color: #FAFAFA;
   vertical-align: baseline;
@@ -168,7 +168,7 @@ h6,
 /* ==================== H1 ==================== */
 h1,
 .h1 {
-  font-family: "Instrument Sans", serif;
+  font-family: "Noto-sans", sans-serif;
   font-size: clamp(48px, 3.646vw, 180px);
   /* 70px */
   font-style: normal;
@@ -195,16 +195,15 @@ h1,
 /* ==================== H2 ==================== */
 h2,
 .h2 {
-  font-family: "Instrument Sans", serif;
-  font-size: clamp(42px, 2.917vw, 150px);
-  /* 56px */
+  font-family: "Noto-sans", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   line-height: 120%;
 }
 @media (max-width: 1199px) {
   h2,
 .h2 {
-    font-size: clamp(38px, 3.336vw, 56px);
+    font-size: 24px;
     /* 40px */
   }
 }
@@ -219,7 +218,7 @@ h2,
 /* ==================== H3 ==================== */
 h3,
 .h3 {
-  font-family: "Instrument Sans", serif;
+  font-family: "Noto-sans", sans-serif;
   font-size: clamp(38px, 2.5vw, 120px);
   /* 48px */
   font-style: normal;
@@ -244,7 +243,7 @@ h3,
 /* ==================== H4 ==================== */
 h4,
 .h4 {
-  font-family: "Instrument Sans", serif;
+  font-family: "Noto-sans", sans-serif;
   font-size: clamp(34px, 2.083vw, 102px);
   /* 40px */
   font-style: normal;
@@ -270,7 +269,7 @@ h4,
 /* ==================== H5 ==================== */
 h5,
 .h5 {
-  font-family: "Instrument Sans", serif;
+  font-family: "Noto-sans", sans-serif;
   font-size: clamp(24px, 1.458vw, 86px);
   /* 28px */
   font-style: normal;
@@ -296,7 +295,7 @@ h5,
 /* ==================== H6 ==================== */
 h6,
 .h6 {
-  font-family: "Instrument Sans", serif;
+  font-family: "Noto-sans", sans-serif;
   font-size: clamp(18px, 1.042vw, 72px);
   /* 23px */
   font-style: normal;
@@ -5134,4 +5133,3 @@ footer .payment-cards .card-block img {
 }
 
 /*# sourceMappingURL=app.css.map */
-설명
